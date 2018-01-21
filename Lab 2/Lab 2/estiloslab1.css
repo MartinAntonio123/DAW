@@ -1,0 +1,171 @@
+		body
+		{
+			background: #FF8000;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-top: 60px;
+		}
+		section
+		{
+			margin-left: 160px;
+			margin-right: 160px;
+		}
+		#hd
+		{
+			background: #5882FA;
+			text-align: center;
+			text-shadow: 5px 5px 5px #FF0040;
+			height: 50px;
+			width: 100%;
+		}
+		#nv
+		{
+			background: #0000FF;
+			position: fixed;
+			overflow: hidden;
+			top: 0;
+			width: 100%;
+			/*word-spacing: 60px;*/
+			text-align: center;
+		}
+		#nv a
+		{
+			color: white;
+			text-decoration: none;
+			padding: 60px 80px;
+		}
+		#nv a:hover
+		{
+			background: #ddd;
+    		color: black;
+		}
+
+		#hd h1
+		{
+			color:#B40431;
+		}
+		#personal
+		{
+			color: green;
+			font-size: 30;
+			font-family: arial; 
+			padding-top: 20px;
+			padding-bottom: 40px;
+			text-align: center;
+			
+		}
+		#imgpersonal
+		{
+			float: initial;
+			border: 30px 30px 30px 30px;
+			padding: 10px 10px 10px 10px;
+			margin: 10px 10px 10px 10px;
+			width: 200px;
+		}
+		#aficiones h3
+		{
+			color: blue;
+			text-align: center;
+		}
+		#natacion
+		{
+			color: blue;
+			font-size: 30;
+			font-family: arial; 
+			padding-top: 20px;
+			padding-bottom: 60px;
+			line-height: 2;
+		}
+		
+		#imgnatacion
+		{
+			float: right;
+			margin: 10px 10px 10px 10px;
+			width: 400px;
+			padding-top: 0px;
+			padding-bottom: 20px;
+			padding-left: 30px;
+		}
+		#introduccion
+		{
+			color: #00FFFF;
+			font-size: 30;
+			font-family: arial; 
+			padding-top: 20px;
+			padding-bottom: 40px;
+			line-height: 2;
+		}
+		#introduccion h4
+		{
+			text-align: center;
+		}
+		#introduccion a
+		{
+			color: #00FFFF;
+		}
+		#preguntas h3
+		{
+			text-align: center;
+		}
+		#preguntas
+		{
+			color: #B404AE;
+			font-family: arial; 
+			padding-top: 20px;
+			padding-bottom: 40px;
+			font-size: 30;
+			line-height: 2;
+		}
+		footer
+		{
+			margin-left: 200px;
+			margin-right: 200px;
+			padding-bottom: 40px;
+			color: black;
+			font-family: arial;
+			font-size: 20;
+		}
+		footer p
+		{
+			padding: 10px 10px 10px 10px;
+		}
+		footer a
+		{
+			text-decoration: none;
+			color: black;
+			font-family: arial;
+			font-size: 20;
+			padding: 10px 10px 10px 10px;
+			border-color: transparent;
+		}
+		#ciclodevida
+		{
+			color: #585858;
+			font-family: arial; 
+			padding-top: 20px;
+			padding-bottom: 60px;
+			font-size: 30;
+			line-height: 2;
+		}
+		#sistemasdeinfo
+		{
+			width: 400px;
+			float: right;
+			padding: 10px 10px 10px 10px;
+		}
+        .lab2
+        {
+            color: #B404AE;
+			font-family: arial; 
+			padding-top: 20px;
+			padding-bottom: 40px;
+			font-size: 30;
+			line-height: 2;
+            border-color: transparent;
+        }
+		footer a:hover
+		{
+			background: black;
+			color: green;
+		}
+
