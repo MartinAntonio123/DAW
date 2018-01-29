@@ -33,7 +33,7 @@
                     </tr>
                     <tr>
                         <td>cambia color </td>
-                        <td><button onclick="cambiar()"> cambiar </td>
+                        <td><button onclick="cambiar()">Start/stop</td>
                     </tr>
                 </table>
            
@@ -78,13 +78,24 @@
 		<div id="preguntas">
 			<h3>Preguntas</h3>
 			<p>
-				¿Cuáles son las diferencias entre los posibles valores de la propiedad position?
+				¿Cuáles son las diferencias entre los posibles valores de la propiedad position?Static: sigue normalmente el flujo de la página, es la propiedad por default. <br>
+                Relative: puedes mover su posición relativa a otros elementos con left, rigth, etc.<br>
+                Fixed: se posiciona en un espacio relativo en la página, y no se mueve ni deja espacios en blanco, las otras imágenes o párrafos se enciman o son cubiertos por él depende de su z-index.<br>
+                Absolute: se posiciona en el elemento que esta antes de el con las características de fixed.<br>
+                Sticky: es un elemento estático pero al llegar a la parte de arriba de la página se vuelve fixed.<br>
+
+                <a href="https://www.w3schools.com/css/css_positioning.asp"> position info </a>
 			</p>
             <p>
-                ¿Cuáles son los valores estándar para la propiedad visibility?
+                ¿Cuáles son los valores estándar para la propiedad visibility?<br>
+                Visibility tiene como default visible.<br>
+                Visible: es cuando podemos ver el elemento y este ocupa espacio.<br>
+                Hidden: no podemos ver el elemento, pero ocupa espacio.<br>
+                Collapse: no vemos el elemento ni ocupa espacio.
+
             </p>
             <p>
-                ¿Qué es el zIndex y para qué sirve?
+                ¿Qué es el zIndex y para qué sirve? Z index sirve para determinar qué tan atrás en la página se encuentra un elemento. Por ejemplo, una marca de agua deberá llevar un z index negativo para que esté detrás de todo
             </p>
 		</div>
 		<hr/>
@@ -96,15 +107,23 @@
 			</p>
 		</div>
 		<hr>
+        <div id="dragdrop">
+            <div id="divdd" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+            <div id="divdd2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+            <img id="imgdd" src="cc.JPG" draggable="true" ondragstart="drag(event)" >
+
+        </div>
 	</section>
 	<footer>
-		<p>Utilize sublime text para la edicion de esta pagina</p>
-		<a href="https://www.sublimetext.com/">Descargar sublime text</a>
+		<p>Utilize brackets para la edicion de esta pagina</p>
+		<a href="http://brackets.io/">Descargar brackets</a>
 		<p>
 		Fuentes:
 		<a href="https://www.w3schools.com/html/html_xhtml.asp">https://www.w3schools.com/html/html_xhtml.asp</a>
 		<a href="http://html5test.com/index.html">http://html5test.com/index.html</a>
-		</p>s
+		</p>
 	</footer>
     <script type="text/javascript" src="lab6.js"></script>
 </body>

@@ -91,6 +91,19 @@ function cambiar(){
         estado = 1;
     }
 }
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
 
 var x = document.getElementById("natacion");
 var y = document.getElementById("personal")
@@ -101,5 +114,5 @@ var color = 1;
 var estado = 1;
 var activo;
 x.addEventListener("click", change);
-nombre.addEventListener("keypress", verify1);
-pw.addEventListener("keypress" , verify2);
+nombre.addEventListener("keydown", verify1);
+pw.addEventListener("keydown" , verify2);
