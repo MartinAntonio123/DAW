@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 6</title>
+	<link rel="stylesheet" type="text/css" href="estiloslab1.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!--etiqueta para acentos y ñ s-->
+		
+</head>
+<body>
+	<nav id="nv">
+		<h3>
+		<a href="#personal">personal</a>
+		<a href="#aficiones">aficiones</a>
+		<a href="#preguntas">preguntas</a>
+		<a href="#ciclodevida">sist de info</a>
+		</h3>
+	</nav>
+	<header id="hd">
+		<h1 id="titulo">Laboratorio 1</h1>
+	</header>
+	<section>
+        <div>
+                <table>
+                    <tr>
+                        <td>User: </td>
+                        <td><input type="text" id="name" name="name"></td>
+                        <td id="namea"></td>
+                    </tr>
+                    <tr>
+                        <td>verify: </td>
+                        <td><input type="password" id="pw" name="pw"></td>
+                        <td id="pwa"> valido? </td>
+                    </tr>
+                    <tr>
+                        <td>cambia color </td>
+                        <td><button onclick="cambiar()"> cambiar </td>
+                    </tr>
+                </table>
+           
+            <p>
+                para info de los listeners <a href="https://www.w3schools.com/jsref/dom_obj_event.asp"> aqui</a>
+            </p>
+            <p>
+                para info de interval <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp"> aqui</a>
+            </p>
+        </div>
+		<div id="personal"> 
+			<img src="pp.jpg" id="imgpersonal">
+			<h4>Un poco acerca de mi</h4>
+		
+			<p>
+				<strong>Nombre:</strong> Martin Antonio Vivanco Palacios
+				<br>
+				<br>
+				<strong>Matricula:</strong> A01701167
+				<br>
+				<br>
+				<strong>Mail alternativo:</strong> mavp98@hotmail.com
+				<br>
+				<br>
+				<strong>Carrera:</strong> ISC
+				<br>
+				<br>
+			</p>
+		</div>
+		<hr/>
+		<div id="aficiones">
+			<H3>Aficiones</H3>
+			<div id="natacion">
+				<h4>Natación</h4>
+				<img src="mp.jpg" id="imgnatacion">
+				<p>
+					La natación es una de mis actividades favoritas, creo que es un excelente deporte, ya que, aunque las competencias sean personales las relaciones de amistad y compañerismo que se logran en el equipo son inigualables debido al gran tiempo que pasamos juntos en el equipo, nos conocemos en nuestros mejores momentos, tanto en los peores, y siempre estamos ahí para apoyarnos. Encuentro esta actividad tanto relajante como apasionante. Relajante porque me ayuda a dejar de pensar en los problemas que pueda tener y a liberar el estrés. La encuentro apasionante ya que siempre se puede mejorar y los únicos limites que existen son los que tú te pongas, Mark Spitz (campeón olímpico) decía que en el entrenamiento un 80% era la parte física mientras que la parte mental era exclusivamente 20%, mientras que en la competencia era exactamente lo opuesto, un 80% mental y solo un 20% físico, claro que esto no significa que no hay que entrenar, como yo lo veo, en el entrenamiento preparas tu cuerpo para lograr las metas, y tal vez tu cuerpo está preparado para lograr tu objetivo, pero tu mente puede no estarlo, por más intenso que haya sido tu entrenamiento no vas a lograr tus metas, porque lo más importante no solo en la natación, sino en todo lo que hagas en la vida es creer en ti.
+				</p>
+			</div>
+		</div>
+		<hr/>
+		<div id="preguntas">
+			<h3>Preguntas</h3>
+			<p>
+				¿Cuáles son las diferencias entre los posibles valores de la propiedad position?
+			</p>
+            <p>
+                ¿Cuáles son los valores estándar para la propiedad visibility?
+            </p>
+            <p>
+                ¿Qué es el zIndex y para qué sirve?
+            </p>
+		</div>
+		<hr/>
+		<div id="ciclodevida">
+			<img src="sistemasdeinfo.png" id="sistemasdeinfo">
+			<h1>Ciclo de vida de sistemas de informacion</h1><br>
+			<p>
+				Todos los sistemas de información tienen un ciclo de vida. Este es el que da un orden a lo que se tiene que hacer mientras se desarrolle. Primero que nada este debe planearse junto con el cliente para saber que se debe hacer; el segundo paso es el análisis, donde el desarrollador analiza que es lo que quiere el cliente y le muestra una propuesta, si todo sale bien podemos seguir al siguiente paso, mientras que si algo sale mal en cualquier parte del ciclo siempre debemos retroceder; Lo siguiente seria el diseño, en donde el desarrollador plasma sus ideas sobre el programa que platico y analizo con el cliente y le muestra un bosquejo, si el cliente está de acuerdo seguimos; Continuamos con la implementación, donde empezamos a codificar el programa; Una vez que está listo se hacen las pruebas necesarias y finalmente después de entregarse el producto hay un periodo de mantenimiento.
+			</p>
+		</div>
+		<hr>
+	</section>
+	<footer>
+		<p>Utilize sublime text para la edicion de esta pagina</p>
+		<a href="https://www.sublimetext.com/">Descargar sublime text</a>
+		<p>
+		Fuentes:
+		<a href="https://www.w3schools.com/html/html_xhtml.asp">https://www.w3schools.com/html/html_xhtml.asp</a>
+		<a href="http://html5test.com/index.html">http://html5test.com/index.html</a>
+		</p>s
+	</footer>
+    <script type="text/javascript" src="lab6.js"></script>
+</body>
+</html>
