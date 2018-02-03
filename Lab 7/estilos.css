@@ -1,0 +1,60 @@
+body
+{
+    background: BlanchedAlmond;
+}
+section
+{
+    margin-left: 160px;
+    margin-right: 160px;
+}
+#nv a
+{
+    color: white;
+    text-decoration: none;
+}
+#nv a:hover
+{
+    background: #ddd;
+    color: black;
+}
+#imgnatacion
+{
+    width: 100%;
+}
+footer
+{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 40px;
+    color: black;
+    font-family: arial;
+    font-size: 20;
+}
+footer p
+{
+    padding: 10px 10px 10px 10px;
+}
+footer a
+{
+    text-decoration: none;
+    color: black;
+    font-family: arial;
+    font-size: 20;
+    padding: 10px 10px 10px 10px;
+    border-color: transparent;
+}
+#sistemasdeinfo
+{
+    width: 100%;
+}
+#ciclodevida
+{
+    color: #585858;
+}
+
+footer a:hover
+{
+    background: black;
+    color: green;
+}
+
