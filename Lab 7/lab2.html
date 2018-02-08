@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 7</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!--etiqueta para acentos y ñ s-->
+    <meta name="viewport" content="with=device-with, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+		
+</head>
+<body>
+	<nav id="nv" class="navbar navbar-light bg-faded">
+        <div class="container">
+		<h3>
+		<a href="#personal">personal</a>
+		<a href="#aficiones">aficiones</a>
+		<a href="#preguntas">preguntas</a>
+		<a href="#ciclodevida">sist de info</a>
+		</h3>
+        </div>
+	</nav>
+	<header id="hd">
+        <div class="container">
+		  <h1 id="titulo">Laboratorio 7</h1>
+        </div>
+	</header>
+	<section class="container">
+        <div>
+                <table>
+                    <tr>
+                        <td>User: </td>
+                        <td><input type="text" id="name" name="name"></td>
+                        <td id="namea"></td>
+                    </tr>
+                    <tr>
+                        <td>verify: </td>
+                        <td><input type="password" id="pw" name="pw"></td>
+                        <td id="pwa"> valido? </td>
+                    </tr>
+                    <tr>
+                        <td>cambia color </td>
+                        <td><button onclick="cambiar()">Start/stop</td>
+                    </tr>
+                </table>
+           
+            <p>
+                para info de los listeners <a href="https://www.w3schools.com/jsref/dom_obj_event.asp"> aqui</a>
+            </p>
+            <p>
+                para info de interval <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp"> aqui</a>
+            </p>
+        </div>
+		<div id="personal"> 
+			<img src="pp.jpg" id="imgpersonal">
+			<h4>Un poco acerca de mi</h4>
+		
+			<p>
+				<strong>Nombre:</strong> Martin Antonio Vivanco Palacios
+				<br>
+				<br>
+				<strong>Matricula:</strong> A01701167
+				<br>
+				<br>
+				<strong>Mail alternativo:</strong> mavp98@hotmail.com
+				<br>
+				<br>
+				<strong>Carrera:</strong> ISC
+				<br>
+				<br>
+			</p>
+		</div>
+		<hr/>
+        <div class="row">
+		<div id="aficiones" class="row col-sm-12 col-md-6 col-lg-4">
+			<H3>Aficiones</H3>
+            </br>
+			<div id="natacion" >
+				<h4>Natación</h4>
+                <p>
+				    <img src="mp.jpg" id="imgnatacion">
+                </p>
+				<p>
+					La natación es una de mis actividades favoritas, creo que es un excelente deporte, ya que, aunque las competencias sean personales las relaciones de amistad y compañerismo que se logran en el equipo son inigualables debido al gran tiempo que pasamos juntos en el equipo, nos conocemos en nuestros mejores momentos, tanto en los peores, y siempre estamos ahí para apoyarnos. Encuentro esta actividad tanto relajante como apasionante. Relajante porque me ayuda a dejar de pensar en los problemas que pueda tener y a liberar el estrés. La encuentro apasionante ya que siempre se puede mejorar y los únicos limites que existen son los que tú te pongas, Mark Spitz (campeón olímpico) decía que en el entrenamiento un 80% era la parte física mientras que la parte mental era exclusivamente 20%, mientras que en la competencia era exactamente lo opuesto, un 80% mental y solo un 20% físico, claro que esto no significa que no hay que entrenar, como yo lo veo, en el entrenamiento preparas tu cuerpo para lograr las metas, y tal vez tu cuerpo está preparado para lograr tu objetivo, pero tu mente puede no estarlo, por más intenso que haya sido tu entrenamiento no vas a lograr tus metas, porque lo más importante no solo en la natación, sino en todo lo que hagas en la vida es creer en ti.
+				</p>
+			</div>
+		</div>
+		<hr/>
+		<div id="preguntas" class=" col-sm-12 col-md-6 col-lg-4">
+			<h3>Preguntas</h3>
+			<p>
+				¿Cuáles son las diferencias entre los posibles valores de la propiedad position?Static: sigue normalmente el flujo de la página, es la propiedad por default. <br>
+                Relative: puedes mover su posición relativa a otros elementos con left, rigth, etc.<br>
+                Fixed: se posiciona en un espacio relativo en la página, y no se mueve ni deja espacios en blanco, las otras imágenes o párrafos se enciman o son cubiertos por él depende de su z-index.<br>
+                Absolute: se posiciona en el elemento que esta antes de el con las características de fixed.<br>
+                Sticky: es un elemento estático pero al llegar a la parte de arriba de la página se vuelve fixed.<br>
+
+                <a href="https://www.w3schools.com/css/css_positioning.asp"> position info </a>
+			</p>
+            <p>
+                ¿Cuáles son los valores estándar para la propiedad visibility?<br>
+                Visibility tiene como default visible.<br>
+                Visible: es cuando podemos ver el elemento y este ocupa espacio.<br>
+                Hidden: no podemos ver el elemento, pero ocupa espacio.<br>
+                Collapse: no vemos el elemento ni ocupa espacio.
+
+            </p>
+            <p>
+                ¿Qué es el zIndex y para qué sirve? Z index sirve para determinar qué tan atrás en la página se encuentra un elemento. Por ejemplo, una marca de agua deberá llevar un z index negativo para que esté detrás de todo
+            </p>
+		</div>
+		<hr/>
+		<div id="ciclodevida" class="col-sm-12 col-md-6 col-lg-4">
+			
+			<h1>Ciclo de vida de sistemas de informacion</h1><br>
+            <img src="sistemasdeinfo.png" id="sistemasdeinfo">
+			<p>
+				Todos los sistemas de información tienen un ciclo de vida. Este es el que da un orden a lo que se tiene que hacer mientras se desarrolle. Primero que nada este debe planearse junto con el cliente para saber que se debe hacer; el segundo paso es el análisis, donde el desarrollador analiza que es lo que quiere el cliente y le muestra una propuesta, si todo sale bien podemos seguir al siguiente paso, mientras que si algo sale mal en cualquier parte del ciclo siempre debemos retroceder; Lo siguiente seria el diseño, en donde el desarrollador plasma sus ideas sobre el programa que platico y analizo con el cliente y le muestra un bosquejo, si el cliente está de acuerdo seguimos; Continuamos con la implementación, donde empezamos a codificar el programa; Una vez que está listo se hacen las pruebas necesarias y finalmente después de entregarse el producto hay un periodo de mantenimiento.
+			</p>
+		</div>
+		<hr>
+        </div>
+	</section>
+	<footer>
+		<p>Utilize brackets para la edicion de esta pagina</p>
+		<a href="http://brackets.io/">Descargar brackets</a>
+		<p>
+		Fuentes:
+		<a href="https://www.w3schools.com/html/html_xhtml.asp">https://www.w3schools.com/html/html_xhtml.asp</a>
+		<a href="http://html5test.com/index.html">http://html5test.com/index.html</a>
+		</p>
+	</footer>
+    <script type="text/javascript" src="lab6.js"></script>
+</body>
+</html>
