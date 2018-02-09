@@ -1,15 +1,62 @@
 <?php
+define("PI", 3.1416);
 $nombre = "Martin";
 echo "hola mundo $nombre <br>";
-echo 'hola mundo ' . $nombre . '<br>';
+echo 'hola mundo ' . $nombre . '<br><br><br>';
 $array1 = [3, 10, 36, 255, 79, 24, 5, 8];
+$array2 = [2, 5, 8, 11, 16, 21, 30];
+$array3 = [ 9, 11, 8, 7, 16, 13, 10, 12];
+$array4 = [3, 5, 2, 6, 5, 9, 5, 2, 8];
 //echo 'el promedio es ' . promedio($array1) . '<br>';
 //echo 'la mediana es ' . mediana($array1) . '<br>';
 imprimir($array1);
-
+imprimir($array2);
+imprimir($array3);
+imprimir($array4);
+imprimirT(10);
+echo '</br></br>¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.</br>';
+echo 'Muestra la información de configuración de PHP en la página y las variables predefinidas en este mismo. Algunos datos son: versión de php, opciones de compilación, extensiones, etc. ';
+echo '</br></br>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción? </br>';
+echo '';
+echo '</br></br>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</br>';
+echo '';
+echo '<br><br> cambio(grado, 1) o cambio(radianes, 2) 180 grados = ';
+echo cambio(180, 1) . ' radianes';
+function cambio($num, $opc)
+{
+    if($opc==1)
+    {
+        return $num*PI/180; 
+    }
+    else
+    {
+        return $num*180/PI;   
+    }
+}
+function imprimirT($num)
+{
+    echo 'Tabla numero, cuadrado y cubo';
+    echo ' <table><thead><th> n^1</th><th> n^2 </font></th> <th> n^3 </font></th></thead><tbody>';
+    for($i=0; $i <= $num; $i++)
+    {
+        echo '<tr>';
+        echo'<td>' . $i . '</td>';
+        echo'<td>' . $i*$i . '</td>';
+        echo'<td>' . $i*$i*$i . '</td>';
+        echo '</tr>';
+        
+    }
+    echo '</tbody> </table>';
+        
+}
 function imprimir($numeros)
 {
     $length = count($numeros); 
+    echo 'arreglo original ';
+    for($i=0; $i < $length ; $i++)
+    {
+        echo $numeros[$i] . ', ';
+    }
     echo '<ul>';   
     echo '<li>el promedio es ' . promedio($numeros) . '</li>';
     echo '<li>la mediana es ' . mediana($numeros) . '</li>';
