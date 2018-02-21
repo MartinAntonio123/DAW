@@ -106,9 +106,9 @@ function drop(ev) {
 }
 
 var x = document.getElementById("natacion");
-var y = document.getElementById("personal")
+var y = document.getElementById("personal");
 var nombre = document.getElementById("name");
-var pw = document.getElementById("pw")
+var pw = document.getElementById("pw");
 var it = 1;
 var color = 1;
 var estado = 1;
