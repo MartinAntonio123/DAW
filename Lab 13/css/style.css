@@ -29,6 +29,12 @@ footer
     text-decoration: underline;
     color: darkgreen;
 }
+.linksSinDecoracion
+{
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
 #imagenPerfil
 {
     width: 200px;
