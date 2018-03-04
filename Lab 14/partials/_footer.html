@@ -1,15 +1,13 @@
 </main>   
 <br>
-	<div>
-		<p>¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</p>
-		<p> Session_unset() borra las variables de sesion, pero la sesion seguira activa y session_destroy() destruye la sesion activa. Es necesario usar las dos para saber cuantas personas han iniciado sesion en nuestro sistema y para que haya un reset de todas las variables.</p>
-		<p>¿Cuál es la diferencia entre una variable de sesión y una cookie?</p>
-		<p> Las cookies son archivos temporales que guardan informacion de la pagina y se guardan en tu computadora, de tal forma que si tu te creas una cookie con una pagina y luego te sales y vuelves a meterte seguira esa informacion. En cambio si utilizas una sesion, la informacion que tienes "guardada" al salir de esa pagina se borra y no la puedes recuperar.</p>
-		<p>¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</p>
-		<p> Guardar el time Stamp y el nombre de la imagen como llave primaria compuesta</p>
-		<p>¿Qué es CSRF y cómo puede prevenirse?</p>
-		<p></p>
-	</div>
+<div class="container">
+    <p>
+        ¿Por qué es importante hacer un session_unset() y luego un session_destroy()?
+    </p>
+    <p>
+        session_unset() - Elimina las variables session pero sigue existiendo una sesion  <br> session_destroy() - elimina la sesion guardada <br> es importante hacer ambos ya que 
+</div>
+<br>
    <footer class="container">
         <p>Links: </p>
         <p>

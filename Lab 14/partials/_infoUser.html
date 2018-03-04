@@ -1,0 +1,17 @@
+<hr>
+<div class="row">
+    <div class="col-md-8">
+    <?php
+        echo 'Bienvenido ' ;
+        _e($_SESSION["username"]) ;
+        echo '!!! </br> </br>';
+    ?>
+    </div>
+    <div class="col-md-4"><img src="uploads/profile.png" alt="perfil" id="imagenPerfil"></div>
+    <p class="col-md-1"></p>
+    <a class="btn btn-info col-md-2" href="editUser.php" role="button">Editar Usuario</a>
+    <p class="col-md-1"></p>
+    <a class="btn btn-info col-md-2" href="logout.php" role="button">Cerrar sesion</a>
+</div>
+<br>
+<br>
