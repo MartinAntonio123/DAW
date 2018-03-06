@@ -1,0 +1,62 @@
+            <div class="main-login main-center">
+					<form class="form-horizontal" method="post" action="registerValidation.php" role="form">
+						
+						<div class="form-group">
+							<label for="nomb" class="cols-sm-2 control-label">Your Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="nomb" id="nomb"  placeholder="Enter your Name"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="job" class="cols-sm-2 control-label">Your job</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="job" id="job"  placeholder="Enter your job"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="Sex" class="cols-sm-2 control-label">Sex</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <select name="sex" id="sex" class="form-control">
+                                      <option value="NULL">--SEXO--</option>
+                                      <option value="M">M</option>
+                                      <option value="F">F</option>
+                                    </select> 
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Registrar">
+						</div>
+					</form>
+				</div>
