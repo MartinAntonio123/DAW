@@ -26,12 +26,11 @@ function getRequestObject() {
 }
 
 function sendRequest(){
-
    request=getRequestObject();
    if(request!=null)
    {
      var userInput = document.getElementById('userInput');
-     var url='index.php?pattern='+userInput.value;
+     var url='ajax.php?pattern='+userInput.value;
      request.open('GET',url,true);
      request.onreadystatechange = 
             function() { 
@@ -44,7 +43,28 @@ function sendRequest(){
             };
      request.send(null);
    }
+    
 }
+function sendRequest2(){
+   request=getRequestObject();
+   if(request!=null)
+   {
+     var userInput = document.getElementById('userInput');
+     var url='ajax2.php?pattern='+userInput.value;
+     request.open('GET',url,true);
+     request.onreadystatechange = 
+            function() { 
+                if((request.readyState==4)){
+                    // Asynchronous response has arrived
+                    var ajaxResponse=document.getElementById('ajaxPresponse');
+                    ajaxResponse.innerHTML=request.responseText;
+                    ajaxResponse.style.visibility="visible";
+                }     
+            };
+     request.send(null);
+   } 
+}
+
 
 function selectValue() {
 

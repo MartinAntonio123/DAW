@@ -35,11 +35,14 @@
         closeDb($conn);
         return $words;
     }
-    function getPassword($user_password){
+    function getAll($nombre){
         $conn = connectDb();
-        $sql = "SELECT password FROM usuarios ";
+        $sql  = "SELECT ID, Nombre, password, sexo, trabajo FROM usuarios WHERE Nombre like'%".$nombre. "%'";
         $result = mysqli_query($conn, $sql);
+        $i = 0;
+        
         closeDb($conn);
         return $result;
     }
+
 ?>
